@@ -31,7 +31,7 @@ Setting up database, e.g. for local instance:
 ```bash
 docker-compose up
 docker-compose exec postgres bash
-psql -h postgres -U postgres
+psql -h postgres -U postgres  # password is postgres
 CREATE DATABASE books WITH OWNER postgres ENCODING 'utf-8';
 ```
 
@@ -44,7 +44,7 @@ Running tests:
 ```bash
 docker-compose up
 docker-compose exec django bash
-./manage.py test
+./manage.py test api.tests
 ```
 
 ## Deployment
@@ -68,8 +68,6 @@ Connect with GitHub and setup automatic `master` deployments.
 
 Set stack to container: `heroku stack:set container`.
 
-## Routes
-
 ## Notes
 
-* Took me Xh Ym to finish the task
+* Took me 3h 0m to finish the task
