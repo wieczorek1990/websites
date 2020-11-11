@@ -7,3 +7,4 @@ mock
 psycopg2
 requests
 uwsgi
+Pillow

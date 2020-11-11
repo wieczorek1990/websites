@@ -93,6 +93,7 @@ else:
             'PASSWORD': os.environ['POSTGRES_PASSWORD'],
             'HOST': 'postgres',
             'PORT': '5432',
+            'TEST': {'NAME': 'books_test'}
         }
     }
 
@@ -134,3 +135,9 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Media
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
