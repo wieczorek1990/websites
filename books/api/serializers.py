@@ -36,6 +36,12 @@ class BookFullDetailSerializer(BookDetailSerializer):
                   'publisher_name', 'author_names')
 
 
+class BookImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Book
+        fields = ('id', 'cover_image')
+
+
 class PublisherSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Publisher

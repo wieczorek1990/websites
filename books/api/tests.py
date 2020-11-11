@@ -81,6 +81,14 @@ class BookViewSetTestCase(BookTestCase):
                                      content_type='application/json')
         self.assertEqual(response.status_code, 200)
 
+    def test_upload_cover_image(self):
+        response = self.client.post('/books/{}/upload_cover_image/'.format(self.book_pk),
+                                    data={
+                                        'file': self.cover_image,
+                                    },
+                                    format='multipart')
+        self.assertEqual(response.status_code, 200)
+
 
 class PublisherViewSetTestCase(BookTestCase):
     def test_list(self):
