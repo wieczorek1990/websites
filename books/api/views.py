@@ -1,11 +1,11 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import viewsets
-from rest_framework import response
-from rest_framework import exceptions
 from rest_framework import decorators
+from rest_framework import exceptions
+from rest_framework import response
+from rest_framework import viewsets
 
-from api import serializers
 from api import models
+from api import serializers
 
 
 class BookViewSet(viewsets.ModelViewSet):

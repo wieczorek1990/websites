@@ -1,9 +1,9 @@
-import os
 import datetime
+import os
 
 from django import test
-from django.core.files import uploadedfile
 from django.conf import settings
+from django.core.files import uploadedfile
 
 from api import models
 
