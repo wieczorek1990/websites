@@ -17,10 +17,19 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework import routers
 
+from api import views
+
+
+router = routers.DefaultRouter()
+router.register(r'books', views.BookViewSet, basename='book')
+router.register(r'publishers', views.PublisherViewSet, basename='publisher')
+router.register(r'authors', views.AuthorViewSet, basename='author')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 urlpatterns += static(settings.MEDIA_URL,
                       document_root=settings.MEDIA_ROOT)
+urlpatterns += router.urls

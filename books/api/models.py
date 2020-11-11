@@ -16,5 +16,5 @@ class Book(models.Model):
     title = models.CharField(max_length=255)
     publisher = models.ForeignKey(Publisher, models.CASCADE)
     pages_num = models.IntegerField()
-    cover_image = models.ImageField(upload_to='images/')
+    cover_image = models.ImageField(upload_to='images/', null=True)
     authors = models.ManyToManyField(Author)
