@@ -1,0 +1,9 @@
+Django
+djangorestframework
+django-extensions
+dj-database-url
+flake8
+mock
+psycopg2
+requests
+uwsgi
