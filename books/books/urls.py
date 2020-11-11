@@ -21,6 +21,7 @@ from rest_framework import routers
 
 from api import views
 
+
 router = routers.DefaultRouter()
 router.register(r'books', views.BookViewSet, basename='book')
 router.register(r'publishers', views.PublisherViewSet, basename='publisher')
