@@ -25,5 +25,6 @@ router.register(r'websites', views.WebsiteViewSet, basename='website')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('query/', views.QueryWebsiteView.as_view())
 ]
 urlpatterns += router.urls
