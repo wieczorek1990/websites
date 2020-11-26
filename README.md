@@ -76,4 +76,4 @@ Set stack to container: `heroku stack:set container`.
 
 ## Notes
 
-* Took me Xh Ym to finish the task
+* Took me 2h 50m to finish the task
