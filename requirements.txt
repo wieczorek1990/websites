@@ -9,3 +9,4 @@ requests
 uwsgi
 celery
 redis
+beautifulsoup4

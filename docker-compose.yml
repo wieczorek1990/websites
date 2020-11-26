@@ -11,6 +11,7 @@ services:
     env_file:
       - envs/django
       - envs/postgres
+      - envs/webshrinker
     ports:
       - "8000:8000"
     volumes:
@@ -31,6 +32,7 @@ services:
     env_file:
       - envs/django
       - envs/postgres
+      - envs/webshrinker
     depends_on:
       - postgres
       - redis

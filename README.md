@@ -12,7 +12,13 @@ DJANGO_SECRET_KEY # 50 characters
 # postgres
 POSTGRES_USERNAME # username
 POSTGRES_PASSWORD # password
+
+# webshrinker
+WEBSHRINKER_ACCESS_KEY # access_key
+WEBSHRINKER_SECRET_KEY # secret_key
 ```
+
+You can obtain webshrinker keys from [here](https://dashboard.webshrinker.com/keys).
 
 ## Running
 
