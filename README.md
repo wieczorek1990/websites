@@ -76,5 +76,5 @@ Set stack to container: `heroku stack:set container`.
 
 ## Notes
 
-* Took me 2h 50m to do the task
+* Took me 3h 0m to do the task
 * I did not touch sorting the queryset and WebPage models
