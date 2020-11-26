@@ -32,7 +32,7 @@ Setting up database, e.g. for local instance:
 docker-compose up
 docker-compose exec postgres bash
 psql -h postgres -U postgres  # password is postgres
-CREATE DATABASE books WITH OWNER postgres ENCODING 'utf-8';
+CREATE DATABASE websites WITH OWNER postgres ENCODING 'utf-8';
 ```
 
 Now run `docker-compose up` again for backend to start without failure.
@@ -70,4 +70,4 @@ Set stack to container: `heroku stack:set container`.
 
 ## Notes
 
-* Took me 3h 0m to finish the task
+* Took me Xh Ym to finish the task

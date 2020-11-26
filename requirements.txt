@@ -7,4 +7,5 @@ mock
 psycopg2
 requests
 uwsgi
-Pillow
+celery
+redis

@@ -7,7 +7,7 @@ WORKDIR /srv/
 ADD requirements.txt /srv/
 RUN pip install -r requirements.txt
 COPY . /srv/
-WORKDIR /srv/books/
+WORKDIR /srv/websites/
 CMD ../bin/wait postgres --\
  python manage.py migrate &&\
- uwsgi --http 0.0.0.0:8000 --wsgi-file books/wsgi.py --master --processes 32 --threads 8
+ uwsgi --http 0.0.0.0:8000 --wsgi-file websites/wsgi.py --master --processes 32 --threads 8
